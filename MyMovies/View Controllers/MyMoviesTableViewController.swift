@@ -167,5 +167,6 @@ extension MyMoviesTableViewController: MyMoviesTableViewCellDelegate {
         
         let movie = fetchedResultsController.object(at: indexPath)
         movie.hasWatched.toggle()
+        movieController.sendMovieToServer(movie: movie)
     }
 }

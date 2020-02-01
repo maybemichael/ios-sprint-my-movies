@@ -16,7 +16,7 @@ class MovieSearchTableViewCell: UITableViewCell {
     @IBOutlet weak var movieTitleLabel: UILabel!
     
     func updateViews() {
-        addMovieButton.titleLabel?.text = "Added"
+        addMovieButton.setTitle("Added", for: .normal)
     }
     
     @IBAction func addMovieButtonTapped(_ sender: Any) {
